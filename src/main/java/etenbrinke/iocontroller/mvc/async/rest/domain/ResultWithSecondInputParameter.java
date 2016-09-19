@@ -16,20 +16,20 @@ public class ResultWithSecondInputParameter implements Result {
         result.setOutputMessage(outputMessage);
     }
 
-    public String getInputParameter2() {
-        return inputParameter2;
-    }
-
-    public void setInputParameter2(String inputParameter2) {
-        this.inputParameter2 = inputParameter2;
-    }
-
     public String getInputParameter() {
         return result.getInputParameter();
     }
 
     public void setInputParameter(String inputParameter) {
         result.setInputParameter(inputParameter);
+    }
+
+    public String getInputParameter2() {
+        return inputParameter2;
+    }
+
+    public void setInputParameter2(String inputParameter2) {
+        this.inputParameter2 = inputParameter2;
     }
 
     public String getControllerCommand() {

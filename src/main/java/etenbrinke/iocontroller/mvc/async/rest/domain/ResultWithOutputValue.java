@@ -16,14 +16,6 @@ public class ResultWithOutputValue implements Result {
         this.outputValue = outputValue;
     }
 
-    public double getOutputValue() {
-        return outputValue;
-    }
-
-    public void setOutputValue(double outputValue) {
-        this.outputValue = outputValue;
-    }
-
     public String getInputParameter() {
         return result.getInputParameter();
     }
@@ -46,5 +38,13 @@ public class ResultWithOutputValue implements Result {
 
     public void setOutputMessage(String outputMessage) {
         result.setOutputMessage(outputMessage);
+    }
+
+    public double getOutputValue() {
+        return outputValue;
+    }
+
+    public void setOutputValue(double outputValue) {
+        this.outputValue = outputValue;
     }
 }
