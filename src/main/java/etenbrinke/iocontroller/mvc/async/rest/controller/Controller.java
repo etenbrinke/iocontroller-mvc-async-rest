@@ -304,6 +304,7 @@ public class Controller {
      */
     @ApiOperation(value = "Get voltage on analog output. Controller command u")
     @ApiResponses(value = { @ApiResponse(code = 200, message = "voltage in V 0-10.23") })
+    @Api
     @RequestMapping(value = "/getVoltageAnalogOutput", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public DeferredResult<ResultWithOutputValue> getVoltageAnalogOutput(
             @ApiParam(value = "analog output 0-3", required = true) @RequestParam(value = "analogOutput", required = true) int analogOutput) {
